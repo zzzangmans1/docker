@@ -41,3 +41,16 @@ service docker start
 
 docker run [option] [image name]
 
+<img width="323" alt="image" src="https://user-images.githubusercontent.com/52357235/200453237-ea16d251-eb9c-4322-b14f-488b02db975d.png">
+
+-d : Container 유지
+-p : 서버가 사용할 포트포워드(호스트 포트: 컨테이너 포트)
+-e : 이미지에서 설정할 옵션
+
+컨테이너 조회
+
+docker ps 
+
+<img width="864" alt="image" src="https://user-images.githubusercontent.com/52357235/200456413-56cebd34-abbf-49f9-bf4a-544ae4f71bc4.png">
+
+
