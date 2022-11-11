@@ -62,5 +62,14 @@ docker ps -a
 
 <img width="838" alt="image" src="https://user-images.githubusercontent.com/52357235/201247060-f818c9a5-fa16-4003-82d0-b71116fe7ae6.png">
 
+httpd 설지 후 컨테이너 생성
+
+<img width="451" alt="image" src="https://user-images.githubusercontent.com/52357235/201248354-ffcdad40-b5c8-46f8-888e-cdf361122d9d.png">
+
+웹서버 테스트
+
+<img width="228" alt="image" src="https://user-images.githubusercontent.com/52357235/201248405-cbf88484-2ad5-45e9-bfb5-38373cb23c05.png">
+
+
 
 
