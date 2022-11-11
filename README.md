@@ -96,3 +96,20 @@ docker exec -it [name] bash
 
 <img width="269" alt="image" src="https://user-images.githubusercontent.com/52357235/201249766-bac53c66-8ff4-49d4-b995-d603dd77fbb3.png">
 
+index.html 수정하기
+
+<img width="414" alt="image" src="https://user-images.githubusercontent.com/52357235/201250185-adbecaf0-274b-48ca-8739-dd16bba099df.png">
+
+오류가 뜨기에 아래 커맨드를 입력해서 vim을 설치합니다.
+
+apt-get update
+apt-get nano
+apt-get vim
+
+vim에서 index.html을 열어보자
+
+<img width="497" alt="image" src="https://user-images.githubusercontent.com/52357235/201250446-70cceb83-0cca-4f62-9688-8a7fc0507edf.png">
+
+수정을 하고 다시 웹사이트에 접속
+
+<img width="395" alt="image" src="https://user-images.githubusercontent.com/52357235/201250550-1478e6b3-31ae-4bef-a748-024c3745c36e.png">
