@@ -29,6 +29,10 @@ docker images
 
 <img width="353" alt="image" src="https://user-images.githubusercontent.com/52357235/200452335-c7c3146c-2082-49fd-9e56-025f3d64ea84.png">
 
+docker images -a 
+
+<img width="420" alt="image" src="https://user-images.githubusercontent.com/52357235/201247203-fb553e57-42c5-49bc-bcd1-827e773f56e6.png">
+
 시스템 관리자 도커 실행 관리
 
 service docker restart
@@ -52,5 +56,11 @@ docker run [option] [image name]
 docker ps 
 
 <img width="864" alt="image" src="https://user-images.githubusercontent.com/52357235/200456413-56cebd34-abbf-49f9-bf4a-544ae4f71bc4.png">
+
+-a : 
+docker ps -a 
+
+<img width="838" alt="image" src="https://user-images.githubusercontent.com/52357235/201247060-f818c9a5-fa16-4003-82d0-b71116fe7ae6.png">
+
 
 
