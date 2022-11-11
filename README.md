@@ -70,6 +70,19 @@ httpd 설지 후 컨테이너 생성
 
 <img width="228" alt="image" src="https://user-images.githubusercontent.com/52357235/201248405-cbf88484-2ad5-45e9-bfb5-38373cb23c05.png">
 
+컨테이너 종료하기
 
+docker stop [container ID | name]
 
+<img width="190" alt="image" src="https://user-images.githubusercontent.com/52357235/201248979-2f23c1a7-b8b4-49ce-80d5-0f4d3346a38a.png">
+
+컨테이너 조회 
+
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/52357235/201249048-4d30107f-177d-4806-b1d0-89a9c4d46e6b.png">
+
+모든 컨테이너 조회
+
+<img width="778" alt="image" src="https://user-images.githubusercontent.com/52357235/201249098-f0af8da8-8c58-4dda-b1c6-eed66516957d.png">
+
+컨테이너 
 
