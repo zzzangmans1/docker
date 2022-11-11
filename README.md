@@ -84,5 +84,15 @@ docker stop [container ID | name]
 
 <img width="778" alt="image" src="https://user-images.githubusercontent.com/52357235/201249098-f0af8da8-8c58-4dda-b1c6-eed66516957d.png">
 
-컨테이너 
+컨테이너 실행하기
+
+docker start [container ID | name]
+
+<img width="205" alt="image" src="https://user-images.githubusercontent.com/52357235/201249586-77003866-0339-4d8b-b50f-16dee5e73d09.png">
+
+콘솔에서 Docker 컨테이너 접속 
+
+docker exec -it [name] bash
+
+<img width="269" alt="image" src="https://user-images.githubusercontent.com/52357235/201249766-bac53c66-8ff4-49d4-b995-d603dd77fbb3.png">
 
