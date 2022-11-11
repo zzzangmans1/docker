@@ -113,3 +113,13 @@ vim에서 index.html을 열어보자
 수정을 하고 다시 웹사이트에 접속
 
 <img width="395" alt="image" src="https://user-images.githubusercontent.com/52357235/201250550-1478e6b3-31ae-4bef-a748-024c3745c36e.png">
+
+호스트 시스템과 도커 컨테이너 간에 디렉토리 공유
+
+docker -v <host directory>:<container direcotry> [image name]
+  
+루트 컨테이너 패스워드 변경
+
+systemctl 등록 
+  
+docker run --name [name] --privileged --restart=always 
