@@ -131,3 +131,7 @@ maria db 컨테이너 접속 하고 db 조회까지
 db 생성
   
 <img width="324" alt="image" src="https://user-images.githubusercontent.com/52357235/201253373-d085860d-8943-4c29-88ac-ade3957f9095.png">
+
+디비버로 연결하여 디비 조회
+  
+<img width="739" alt="image" src="https://user-images.githubusercontent.com/52357235/201253501-5a305528-60a5-4bdf-a5ca-c83641e39e7c.png">
