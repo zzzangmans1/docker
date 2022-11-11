@@ -123,3 +123,11 @@ docker -v <host directory>:<container direcotry> [image name]
 systemctl 등록 
   
 docker run --name [name] --privileged --restart=always 
+
+maria db 컨테이너 접속 하고 db 조회까지
+  
+<img width="770" alt="image" src="https://user-images.githubusercontent.com/52357235/201253033-4e602ece-f114-4976-8312-046fc0bedbd1.png">
+
+db 생성
+  
+<img width="324" alt="image" src="https://user-images.githubusercontent.com/52357235/201253373-d085860d-8943-4c29-88ac-ade3957f9095.png">
