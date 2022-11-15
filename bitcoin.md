@@ -195,8 +195,11 @@ bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=
 ![image](https://user-images.githubusercontent.com/52357235/201957896-21a4a537-3671-4ecf-a6e1-43aba0d32dc6.png)
 
 비트코인 전송을 해보겠습니다.
+라벨을 입력한 주소에 보내겠습니다.
 
 ```
 bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 sendtoaddress [받는 주소] [전송량]
 ```
+
+![image](https://user-images.githubusercontent.com/52357235/201959430-41fe4953-9484-4bbb-a2c2-327e11d0bf0b.png)
 
