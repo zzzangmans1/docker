@@ -75,3 +75,47 @@ bitcoind -regtest -rpcuser=test -rpcpassword=test -server -rpcport=12345 --datad
 
 ![image](https://user-images.githubusercontent.com/52357235/201950504-a84410f9-722e-40d6-9a7d-cfb931f9dc43.png)
 
+bitcoin-cli 기능
+- 계정생성
+- 트랜잭션 발생
+- 잔액 조회
+- 피어 연결
+
+bitcoin-cli 실행 - 명령어
+사용방법
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=/bitcoin/node1 [명령어]
+```
+
+node1 에 지갑 계정생성
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 getnewaddress
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201951830-c0042238-8f0e-4cbb-ae2c-e5f401be771a.png)
+
+bitcoin-cli 실행 - 계정생성[lable] 추가 
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 getnewaddress 2N2kdga6
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201952256-a1c92ee1-fe7c-4f8d-ad55-cc6b8cf8bee0.png)
+
+bitcoin-cli 실행 - 라벨주소 확인
+
+에러 발생 : -deprecatedrpc=accounts
+
+![image](https://user-images.githubusercontent.com/52357235/201952360-90e920a1-89ce-4218-ba08-b9261002d6b9.png)
+
+오류를 해결하기 위해 -deprecatedrpc=accounts 명령어 실행
+
+```
+bitcoind -regtest -rpcuser=test -rpcpassword=test -server -rpcport=12345 -port=12346 -datadir=$PWD/node1 -deprecatedrpc=accounts
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201952806-c75785fd-0eb8-478b-807d-5d5a88039cc7.png)
+
+이제 
