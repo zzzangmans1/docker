@@ -141,3 +141,14 @@ db 생성
 docker run -it --name [container name] [image name] /bin/bash
 
 <img width="1057" alt="image" src="https://user-images.githubusercontent.com/52357235/201799146-897a9385-2b3c-4dad-9c8f-398b3b3a0d02.png">
+
+근데 위와 같은 방법으로 접속하고 exit로 종료를 하면 컨테이너가 꺼지게 된다.
+  
+exit로 종료해도 다시 켜지게 하는 방법은
+  
+docker start [container name]
+
+docker exec -it [container name] /bin/bash
+  
+로 시작하면 exit를 해도 컨테이너가 종료되지 않는다.
+  
