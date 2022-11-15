@@ -156,5 +156,47 @@ bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=
 
 ![image](https://user-images.githubusercontent.com/52357235/201955927-29787740-e16e-4aaa-a8c4-9c43e1a2fdde.png)
 
+블록 100개 생성하여서 초기보상 50bitcoin이 생성된걸 listaccounts로 확인할 수 있습니다.
+
 ![image](https://user-images.githubusercontent.com/52357235/201956014-b96d2c92-43e7-4d6c-9e8a-3215147f7f53.png)
+
+블록 개수를 조회 해보겠습니다.
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 getblockcount
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201956385-39ea3046-2390-43d6-a5e4-da9bf013aacd.png)
+
+블록 해시를 조회 해보겠습니다.
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 getblockhash [블록 번호]
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201956719-3906896a-a644-4310-b8de-fa410530e7bb.png)
+
+블록 정보를 조회 해보겠습니다.
+tx는 트랜잭션이다.
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 getblock [블록 해시]
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201957052-0cddf0bd-304f-47ad-b6fa-449377624ca4.png)
+
+라벨로 지갑주소 조회하겠습니다.
+라벨은 listaccounts 명령어로 조회합니다.
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 getaccountaddress [라벨 이름]
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201957896-21a4a537-3671-4ecf-a6e1-43aba0d32dc6.png)
+
+비트코인 전송을 해보겠습니다.
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 sendtoaddress [받는 주소] [전송량]
+```
 
