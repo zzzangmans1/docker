@@ -147,7 +147,14 @@ bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=
 
 ![image](https://user-images.githubusercontent.com/52357235/201955327-13557fd3-64ea-4370-9c3a-0e1060f1b573.png)
 
-블록을 생성하였지만 
-블록을 생성하였지만 보상이 주ㅈ어지지 
-ㅇㅏㄴㅎ았따.
+- 블록을 생성하였지만 보상이 주어지지 않았다.
+- Bitcoin은 101번째 블록부터 보상이 주어진다.
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 generate 100
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201955927-29787740-e16e-4aaa-a8c4-9c43e1a2fdde.png)
+
+![image](https://user-images.githubusercontent.com/52357235/201956014-b96d2c92-43e7-4d6c-9e8a-3215147f7f53.png)
 
