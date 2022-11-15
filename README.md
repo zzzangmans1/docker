@@ -168,4 +168,10 @@ bitcoind -regtest -rpcuser=test -rpcpassword=test -server -rpcport=12345 --datad
 -addnode: 다른 노드와 연결
 -daemon: 노드를 백그라운드에 띄워줌
  
+노드에 접속하고 계정생성하기
+  
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test rpcport=12345 -rpcconnect=127.0.0.1 -datadir"/bitcoin/node1" getnewaddress
+  
+<img width="859" alt="image" src="https://user-images.githubusercontent.com/52357235/201803556-5508efce-12b3-452d-be23-0e2c9c810bdd.png">
+
   
