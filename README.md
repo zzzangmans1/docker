@@ -170,8 +170,10 @@ bitcoind -regtest -rpcuser=test -rpcpassword=test -server -rpcport=12345 --datad
  
 노드에 접속하고 계정생성하기
   
-bitcoin-cli -regtest -rpcuser=test -rpcpassword=test rpcport=12345 -rpcconnect=127.0.0.1 -datadir"/bitcoin/node1" getnewaddress
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test rpcport=12345 -rpcconnect=127.0.0.1 -datadir"/bitcoin/node1" getnewaddress [Nickname]
   
 <img width="859" alt="image" src="https://user-images.githubusercontent.com/52357235/201803556-5508efce-12b3-452d-be23-0e2c9c810bdd.png">
 
+해시값으로만 찾기엔 힘들기에 Nickname을 줄 수 있다.
+  
   
