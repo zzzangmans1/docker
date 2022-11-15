@@ -203,3 +203,7 @@ bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=
 
 ![image](https://user-images.githubusercontent.com/52357235/201959430-41fe4953-9484-4bbb-a2c2-327e11d0bf0b.png)
 
+비트코인 전송읋 확인하겠습니다.
+- 새로운 블록이 생성되어야 비트코인 전송 트랜잭션이 처리가 되어진다.
+- 
+![image](https://user-images.githubusercontent.com/52357235/201960122-ec94066d-3737-4b73-994c-f388b9521c78.png)
