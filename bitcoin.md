@@ -111,6 +111,7 @@ bitcoin-cli 실행 - 라벨주소 확인
 ![image](https://user-images.githubusercontent.com/52357235/201952360-90e920a1-89ce-4218-ba08-b9261002d6b9.png)
 
 오류를 해결하기 위해 -deprecatedrpc=accounts 명령어 실행
+**명령어 실행할 때는 node1의 노드를 중지하고 명령어 입력**
 
 ```
 bitcoind -regtest -rpcuser=test -rpcpassword=test -server -rpcport=12345 -port=12346 -datadir=$PWD/node1 -deprecatedrpc=accounts
@@ -118,4 +119,35 @@ bitcoind -regtest -rpcuser=test -rpcpassword=test -server -rpcport=12345 -port=1
 
 ![image](https://user-images.githubusercontent.com/52357235/201952806-c75785fd-0eb8-478b-807d-5d5a88039cc7.png)
 
-이제 
+이제 라벨 주소를 다시 조회하겠습니다.
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 listaccounts
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201954579-8ef5b745-93c1-44f9-9131-9bf407738a78.png)
+
+bitcoin-cli 실행 - 블록생성
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 generate [생성할 블록 개수]
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201954996-4aefbe1b-a5b9-4153-a0bb-00c706b22a80.png)
+
+지갑에 블록이 추가되었다고 로그도 뜨시는걸 확인할 수 있습니다
+
+![image](https://user-images.githubusercontent.com/52357235/201955120-dd0795fb-da62-4861-8f85-906f5667b3a0.png)
+
+bitcoin-cli 실행 - 계정잔액 확인
+
+```
+bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=127.0.0.1 -datadir=$PWD/node1 listaccounts
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201955327-13557fd3-64ea-4370-9c3a-0e1060f1b573.png)
+
+블록을 생성하였지만 
+블록을 생성하였지만 보상이 주ㅈ어지지 
+ㅇㅏㄴㅎ았따.
+
