@@ -135,3 +135,9 @@ db 생성
 디비버로 연결하여 디비 조회
   
 <img width="739" alt="image" src="https://user-images.githubusercontent.com/52357235/201253501-5a305528-60a5-4bdf-a5ca-c83641e39e7c.png">
+
+컨테이너로 실행시키고 바로 접속하는 방법
+
+docker run -it --name [container name] [image name] /bin/bash
+
+<img width="1057" alt="image" src="https://user-images.githubusercontent.com/52357235/201799146-897a9385-2b3c-4dad-9c8f-398b3b3a0d02.png">
