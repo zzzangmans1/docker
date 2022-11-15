@@ -46,4 +46,32 @@ start.sh을 실행시키면 비트코인이 실행됩니다. 종료하려면 ctr
 start.sh 내부 옵션을 살펴보겠습니다.
 </br> -regtest : main or test network와 연결되지 않음.
 </br> -server : RCP 요청 허용
-</br> -rpcuser : RCP 요청 
+</br> -rpcuser : RCP 요청 시 필요한 유저 이름
+</br> -rpcpassword : RCP 요청 시 필요한 비밀번호
+</br> -rpcport : RCP 요청 시 사용할 포트 번호
+</br> -port : 노드끼리 연결 시 사용되는 포트 번호
+</br> --datadir : 블록과 같은 데이터가 저장되는 위치(.bitcoin)
+</br> conf : 설정 파일 경로
+</br> daemon : 노드를 백그라운드에 띄워줌
+
+Bitcoin 수동 실행 
+
+```
+mkdir test
+bitcoind -regtest -rpcuser=test -rpcpassword=test -server -rpcport=12345 --datadir=$PWD/test
+```
+
+![image](https://user-images.githubusercontent.com/52357235/201949028-cda9f97d-8df5-4795-b666-4de3a8e8f632.png)
+
+비트코인 멀티노드 운영
+1. Data 디렉토리 생성: node1, node2
+2. Docker bitcoin container에서 나간다.
+3. 2개의 터미널에서 docker bitcoin container에 각 접속한다.
+4. node1, node2를 실행한다(rpcport, port, datadir은 다르다).
+
+![image](https://user-images.githubusercontent.com/52357235/201949865-bfa4da85-2d6b-4057-b0d9-d37e4856f114.png)
+
+멀티 노드를 생성한다.
+
+![image](https://user-images.githubusercontent.com/52357235/201950504-a84410f9-722e-40d6-9a7d-cfb931f9dc43.png)
+
