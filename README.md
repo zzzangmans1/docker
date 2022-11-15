@@ -152,3 +152,20 @@ docker exec -it [container name] /bin/bash
   
 로 시작하면 exit를 해도 컨테이너가 종료되지 않는다.
   
+# bitcoin
+  
+```
+bitcoind -regtest -rpcuser=test -rpcpassword=test -server -rpcport=12345 --datadir="$PWD/.bitcoin"
+```
+-regtest : main or test network와 연결되지 않음.
+-server : RCP 요청 허용
+-rpcuser: RCP 요청 시 필요한 유저 이름
+-rpcpassword : RCP 요청 시 필요한 비밀번호
+-rpcport: RCP 요청 시 사용할 포트 번호
+-port: 노드끼리 연결 시 사용되는 포트 번호
+--datadir: 블록과 같은 데이터가 저장되는 위치(.bitcoin)
+-conf: 설정 파일 경로
+-addnode: 다른 노드와 연결
+-daemon: 노드를 백그라운드에 띄워줌
+ 
+  
