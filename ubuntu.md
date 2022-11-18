@@ -1,3 +1,5 @@
+# 비트코인 dApp 개발
+
 우분투 설치
 
 docker pull ubuntu
@@ -21,5 +23,19 @@ ifconfig를 사용하기 위해 다운로드
 ping을 쏴서 비트코인 도커에 쏘기
 
 <img width="1348" alt="image" src="https://user-images.githubusercontent.com/52357235/202601926-db219347-682b-4899-a9e0-a749223f035a.png">
+
+# NODE.JS 다운로드
+
+curl을 사용하기 위해 다운로드
+
+<img width="863" alt="image" src="https://user-images.githubusercontent.com/52357235/202602338-ff79697f-8abf-44a5-bba8-64926f9027d7.png">
+
+curl에서 node.js 버전 다운로드
+
+<img width="862" alt="image" src="https://user-images.githubusercontent.com/52357235/202602808-7ae7be9a-a038-43b9-a0c4-c45d81227700.png">
+
+node.js 다운로드
+
+<img width="860" alt="image" src="https://user-images.githubusercontent.com/52357235/202602691-fdd9f157-a182-4c0d-8ee9-bba4a000e756.png">
 
 
