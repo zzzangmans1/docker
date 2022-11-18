@@ -62,3 +62,12 @@ package.json가 만들어진다.
 
 <img width="432" alt="image" src="https://user-images.githubusercontent.com/52357235/202604271-c53c676e-5ee5-4ec0-b1a6-9a18268b7692.png">
 
+rpc 프로토콜과 통신할 수 있는 라이브러리 다운로드
+
+<img width="858" alt="image" src="https://user-images.githubusercontent.com/52357235/202605001-1a65e67a-12f3-4e27-ba23-a91480ba516e.png">
+
+위 모듈을 설치하면 node-modules 가 설치되있다.
+
+<img width="474" alt="image" src="https://user-images.githubusercontent.com/52357235/202605151-096725bd-e967-4139-9473-b6c39212f950.png">
+
+서버 
