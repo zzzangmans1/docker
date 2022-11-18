@@ -1,5 +1,7 @@
 # 비트코인 플랫폼 설치
 
+콘테이너 실행 안될 때 docker start bitcoin <<
+
  비트코인 도커 이미지 다운로드
 
 ```
@@ -205,5 +207,9 @@ bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=
 
 비트코인 전송읋 확인하겠습니다.
 - 새로운 블록이 생성되어야 비트코인 전송 트랜잭션이 처리가 되어진다.
-- 
+
 ![image](https://user-images.githubusercontent.com/52357235/201960122-ec94066d-3737-4b73-994c-f388b9521c78.png)
+
+비트코인 콘테이너의 네트워크 주소 확인하자
+
+<img width="804" alt="image" src="https://user-images.githubusercontent.com/52357235/202600553-57c564ca-7c86-4ede-a4e6-548203a5d9f2.png">
