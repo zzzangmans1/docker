@@ -50,4 +50,15 @@ npm 버전 확인
 
 <img width="231" alt="image" src="https://user-images.githubusercontent.com/52357235/202603599-a78ceba4-d21a-4b45-83ae-c0f179c7df5a.png">
 
+패키지 만들기
+
+cd /root
+mkdir bitcoin_dapp
+cd bitcoin_dapp
+
+<img width="632" alt="image" src="https://user-images.githubusercontent.com/52357235/202604202-f222df9b-d16a-4c9d-bc3a-fce03d6a3bf6.png">
+
+package.json가 만들어진다.
+
+<img width="432" alt="image" src="https://user-images.githubusercontent.com/52357235/202604271-c53c676e-5ee5-4ec0-b1a6-9a18268b7692.png">
 
