@@ -77,6 +77,8 @@ rpc 프로토콜과 통신할 수 있는 라이브러리 다운로드
 
 <img width="851" alt="image" src="https://user-images.githubusercontent.com/52357235/202605636-92a05ebb-94dd-4ff6-94c9-0ceb426d290a.png">
 
+기본 소스 연결
+
 ```
 let RpcClient = require("bitcoind-rpc-client");
 let client = new RpcClient( {
@@ -87,4 +89,10 @@ let client = new RpcClient( {
 
 });
 ```
+
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/52357235/203021351-735eb538-3ee0-4ad5-9116-62c154615062.png">
+
+<img width="791" alt="image" src="https://user-images.githubusercontent.com/52357235/203020716-e7ddd1fc-e2c0-4613-8042-fadb33e18556.png">
+
+
 
