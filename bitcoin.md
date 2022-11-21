@@ -213,3 +213,16 @@ bitcoin-cli -regtest -rpcuser=test -rpcpassword=test -rpcport=12345 -rpcconnect=
 비트코인 콘테이너의 네트워크 주소 확인하자
 
 <img width="804" alt="image" src="https://user-images.githubusercontent.com/52357235/202600553-57c564ca-7c86-4ede-a4e6-548203a5d9f2.png">
+
+UTXO 확인
+UTXO - 소비되지 않은 트랜잭션
+listunspent 명령어 : 노드에 보유하고 있는 비트코인을 확인
+3개의 UTXO: 3개의 동전(지폐)를 가지고 있음을 의미
+
+<img width="860" alt="image" src="https://user-images.githubusercontent.com/52357235/202972589-fa4a9ec1-033f-4c5b-bab7-359a43543860.png">
+
+노드의 전체 보유량 조회
+
+<img width="863" alt="image" src="https://user-images.githubusercontent.com/52357235/202972705-0e8185e1-e55f-421f-9ac1-34e27a61c1ff.png">
+
+수
