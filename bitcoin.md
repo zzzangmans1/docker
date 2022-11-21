@@ -225,4 +225,15 @@ listunspent 명령어 : 노드에 보유하고 있는 비트코인을 확인
 
 <img width="863" alt="image" src="https://user-images.githubusercontent.com/52357235/202972705-0e8185e1-e55f-421f-9ac1-34e27a61c1ff.png">
 
-수
+수수료 없는 전송
+
+새로운 지갑생성
+
+<img width="856" alt="image" src="https://user-images.githubusercontent.com/52357235/202972872-356e7cd5-2120-42a4-a832-2e9c46c8516b.png">
+
+코인 전송
+
+<img width="857" alt="image" src="https://user-images.githubusercontent.com/52357235/202972988-2c5eeefa-74f5-443e-a414-507182875b95.png">
+
+move 는 트랜잭션이 발생하지 않는다.
+
