@@ -70,24 +70,21 @@ rpc 프로토콜과 통신할 수 있는 라이브러리 다운로드
 
 <img width="474" alt="image" src="https://user-images.githubusercontent.com/52357235/202605151-096725bd-e967-4139-9473-b6c39212f950.png">
 
-비트코인 서버 실행
+비트코인 서버 실행 (bitcoin cantainer에서 실행)
 
 기존 비트코인 명령어와 비슷한데 -rpcallowip 로컬 ip 아니니까 추가해줘야 한다.
 0.0.0.0/0 은 모든 ip를 다 허용해준다는 뜻
 
 <img width="851" alt="image" src="https://user-images.githubusercontent.com/52357235/202605636-92a05ebb-94dd-4ff6-94c9-0ceb426d290a.png">
 
-
 ```
 let RpcClient = require("bitcoind-rpc-client");
 let client = new RpcClient( {
   user: "test",
   pass: "test",
-  host: "127.0.0.1",
+  host: "172.17.0.4",
   port: 12345
 
 });
-
-
 ```
 
