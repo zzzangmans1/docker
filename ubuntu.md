@@ -56,6 +56,8 @@ cd /root
 mkdir bitcoin_dapp
 cd bitcoin_dapp
 
+패키지 초기화
+
 <img width="632" alt="image" src="https://user-images.githubusercontent.com/52357235/202604202-f222df9b-d16a-4c9d-bc3a-fce03d6a3bf6.png">
 
 package.json가 만들어진다.
@@ -114,3 +116,149 @@ let client = new RpcClient({
 
 <img width="566" alt="image" src="https://user-images.githubusercontent.com/52357235/203186279-26f0bfe5-c4c7-4c79-82e3-9ab3f45ab313.png">
 
+라벨 확인
+
+```
+let RpcClient = require("bitcoind-rpc-client");
+let client = new RpcClient({
+	user: "test",
+	pass: "test",
+	host: "172.17.0.3",
+	port: 12345
+});
+
+(async function() {
+	let labels = await client.listAccounts();
+	console.log(labels);
+}) ();
+```
+
+<img width="512" alt="image" src="https://user-images.githubusercontent.com/52357235/203186718-de58471f-0598-4e66-ab39-0682213f9263.png">
+
+블록 개수 확인
+
+```
+let RpcClient = require("bitcoind-rpc-client");
+let client = new RpcClient({
+	user: "test",
+	pass: "test",
+	host: "172.17.0.3",
+	port: 12345
+});
+
+(async function() {
+	let blockNumber = await client.getBlockCount();
+	console.log(blockNumber);
+}) ();
+```
+
+<img width="374" alt="image" src="https://user-images.githubusercontent.com/52357235/203186915-774a2261-c8f7-4c02-bc50-73c9113daa0f.png">
+
+블록 생성 조회
+
+```
+let RpcClient = require("bitcoind-rpc-client");
+let client = new RpcClient({
+	user: "test",
+	pass: "test",
+	host: "172.17.0.3",
+	port: 12345
+});
+
+(async function() {
+	let blockHash = await client.generate(102);
+	console.log(blockHash);
+
+	let blockNumber = await client.getBlock(blockHash.result[0]);
+	console.log(blockNumber);
+}) ();
+```
+
+<img width="738" alt="image" src="https://user-images.githubusercontent.com/52357235/203187328-4d5ab2b9-6891-4948-9c02-410f9eda72f8.png">
+
+트랜잭션 발생
+
+to에 들어갈 해시값은 위에서 계정 해시값을 넣는다.
+
+```
+let RpcClient = require("bitcoind-rpc-client");
+let client = new RpcClient({
+	user: "test",
+	pass: "test",
+	host: "172.17.0.3",
+	port: 12345
+});
+
+(async function() {
+	let to = "2MxFkJMmAjXVV3Vn2zvXbD4Wpk9AP7xntBb";
+	let txHash = await client.sendToAddress(to, 5);
+	let txPool = await client.getRawMemPool();
+	await client.generate(1);
+	console.log(txHash);
+	console.log(txPool);
+}) ();
+```
+
+<img width="625" alt="image" src="https://user-images.githubusercontent.com/52357235/203187980-5fee166e-0f23-488e-8825-4821b45ac57b.png">
+
+UTXO 확인
+
+```
+let RpcClient = require("bitcoind-rpc-client");
+let client = new RpcClient({
+	user: "test",
+	pass: "test",
+	host: "172.17.0.3",
+	port: 12345
+});
+
+(async function() {
+	let UTXO = await client.listUnspent();
+	console.log(UTXO);
+}) ();
+```
+
+<img width="734" alt="image" src="https://user-images.githubusercontent.com/52357235/203188374-dc422388-5ae6-4646-bed1-4df30fe139aa.png">
+
+잔액조회
+
+```
+let RpcClient = require("bitcoind-rpc-client");
+let client = new RpcClient({
+	user: "test",
+	pass: "test",
+	host: "172.17.0.3",
+	port: 12345
+});
+
+(async function() {
+	let balance = await client.getBalance();
+	console.log(balance);
+}) ();
+```
+
+<img width="374" alt="image" src="https://user-images.githubusercontent.com/52357235/203188530-3980caba-8288-485c-9be4-2fab85a50736.png">
+
+move 전송
+
+```
+let RpcClient = require("bitcoind-rpc-client");
+let client = new RpcClient({
+	user: "test",
+	pass: "test",
+	host: "172.17.0.3",
+	port: 12345
+});
+
+(async function() {
+	let from = "";
+	let to = "mung";
+	let amount = 5;
+	let result = await client.move(from, to, amount);
+	let accounts = await client.listAccounts();
+	console.log(result);
+	console.log(accounts);
+}) ();
+```
+
+<img width="536" alt="image" src="https://user-images.githubusercontent.com/52357235/203189152-4dad6152-0eaf-47fa-84ac-41e4ec67b462.png">
