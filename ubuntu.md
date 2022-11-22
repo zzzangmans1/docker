@@ -78,13 +78,13 @@ rpc 프로토콜과 통신할 수 있는 라이브러리 다운로드
 <img width="851" alt="image" src="https://user-images.githubusercontent.com/52357235/202605636-92a05ebb-94dd-4ff6-94c9-0ceb426d290a.png">
 
 기본 소스 연결
-
+비트코인서버에서 ip a 로 아이피 확인
 ```
 let RpcClient = require("bitcoind-rpc-client");
 let client = new RpcClient( {
   user: "test",
   pass: "test",
-  host: "172.17.0.4",
+  host: "172.17.0.3", 
   port: 12345
 
 });
@@ -94,5 +94,23 @@ let client = new RpcClient( {
 
 <img width="791" alt="image" src="https://user-images.githubusercontent.com/52357235/203020716-e7ddd1fc-e2c0-4613-8042-fadb33e18556.png">
 
+계정 생성
+비트코인 ip를 호스트에 입력
 
+```
+let RpcClient = require("bitcoind-rpc-client");
+let client = new RpcClient({
+	user: "test",
+	pass: "test",
+	host: "172.17.0.3",
+	port: 12345
+});
+
+(async function() {
+	let createAddress = await client.getNewAddress("mung");
+	console.log(createAddress);
+}) ();
+```
+
+<img width="566" alt="image" src="https://user-images.githubusercontent.com/52357235/203186279-26f0bfe5-c4c7-4c79-82e3-9ab3f45ab313.png">
 
